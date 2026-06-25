@@ -1013,3 +1013,97 @@ body {
     padding: 60px 0;
   }
 }
+
+/* Testimonial Section */
+.testimonial-section {
+  padding: 100px 0;
+  background: #fdfdfc;
+  border-top: 1px solid #e5ddd3;
+}
+.testimonial-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.testimonial-header .eyebrow {
+  display: block;
+  margin-bottom: 16px;
+}
+.testimonial-header h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.5px;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #e5ddd3;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.testimonial-stars {
+  color: #f5b301;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.testimonial-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.testimonial-author {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: #111;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paper Sticker */
+.paper-sticker {
+  position: absolute;
+  background: #ffde59;
+  color: #111;
+  padding: 12px;
+  font-size: 11px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  box-shadow: 3px 5px 15px rgba(0,0,0,0.25);
+  width: 140px;
+  text-align: center;
+  z-index: 10;
+  line-height: 1.4;
+  border-radius: 2px;
+  border: 1px dashed #d1b439;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.paper-sticker::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -20px;
+  transform: rotate(-4deg);
+  width: 40px;
+  height: 20px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}

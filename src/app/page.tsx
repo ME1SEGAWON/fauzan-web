@@ -10,6 +10,12 @@ const featuredItems = [
   { img: "/lemon (1).jpg", cat: "Minuman", title: "Es Teh Jumbo Lemon" },
 ];
 
+const testimonials = [
+  { text: "Es tehnya seger banget, manisnya pas karena pakai gula asli. Porsinya beneran jumbo, worth it banget buat nemenin CFD!", author: "Siti, Warga Depok" },
+  { text: "Tiap minggu abis jogging selalu mampir sini. Beli es teh dapet gratis foto di cermin cembung, unik banget konsepnya!", author: "Budi, Pelanggan Setia" },
+  { text: "Pernah PO buat acara arisan keluarga, responnya cepet dan es tehnya tetep seger pas nyampe. Recommended!", author: "Ibu Ningsih" },
+];
+
 export default function Home() {
   useEffect(() => {
     const navLinks = document.querySelectorAll('.nav-pill a[href^="#"]');
@@ -273,6 +279,7 @@ export default function Home() {
                 <div>
                   <h4>Jadwal Buka</h4>
                   <p>Minggu pagi, 06.00 – 09.00 WIB</p>
+                  <p>Senin dan Sabtu buka 08:00-17:00 wib di samping toko mitra 10 Margonda Depok</p>
                 </div>
               </div>
               <div className="flyer-detail-item">
@@ -331,6 +338,9 @@ export default function Home() {
             <a href="#produk" className="card">
               <div className="card-media">
                 <img src="/tea-ori.jpg" alt="Es Teh Original" />
+                <div className="paper-sticker" style={{ top: '20px', right: '5px', transform: 'rotate(8deg)' }}>
+                  es teh manis Mak Udin manis dan segarnya mantap pool!!
+                </div>
               </div>
               <div className="card-body">
                 <div className="card-category">Minuman</div>
@@ -351,6 +361,9 @@ export default function Home() {
             <a href="#produk" className="card">
               <div className="card-media">
                 <img src="/lemon (1).jpg" alt="Es Teh Lemon" />
+                <div className="paper-sticker" style={{ top: '20px', left: '5px', transform: 'rotate(-6deg)' }}>
+                  es teh manis Mak Udin manis dan segarnya mantap pool!!
+                </div>
               </div>
               <div className="card-body">
                 <div className="card-category">Tambahan</div>
@@ -368,22 +381,45 @@ export default function Home() {
               <div className="eyebrow">Kenapa Mak Udin?</div>
               <h3>Es Teh yang Beda</h3>
               <p>
-                Pakai 100% gula asli, bukan pemanis buatan. Tehnya diseduh tiap
-                pagi, bukan teh sisa kemarin. Porsi jumbo, harga tetap Rp5.000.
+                Es teh manis Mak Udin terbuat dari teh pilihan berkualitas dan 100 % gula asli
                 <br />
                 <br />
-                Mau pesan banyak buat acara? Bisa PO lewat WhatsApp. Atau
-                langsung mampir ke booth kami di CFD Depok tiap Minggu pagi.
+                Mau pesan banyak buat acara? Untuk PO (Pre-Order) dikenakan DP 50% di awal dan pelunasan saat pesanan selesai. Kalau CO (Check-Out) bisa langsung mampir ke booth kami di CFD Depok tiap Minggu pagi dengan pembayaran fleksibel.
               </p>
+              <div>
+                <a
+                  href="https://wa.me/6287870062667?text=Halo%20Mak%20Udin%2C%20saya%20mau%20PO%20Es%20Teh%20untuk%20acara..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    backgroundColor: '#25D366',
+                    color: '#fff',
+                    padding: '10px 20px',
+                    borderRadius: '8px',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    marginTop: '20px',
+                    fontSize: '14px'
+                  }}
+                >
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M12.031 0A12.034 12.034 0 0 0 0 12.034c0 2.123.553 4.195 1.603 5.992L.092 23.518l5.656-1.48A12.022 12.022 0 0 0 12.03 24a12.035 12.035 0 0 0 12.033-12.033A12.036 12.036 0 0 0 12.03 0zm0 22.014c-1.803 0-3.56-.484-5.11-1.4L6.6 20.421l-3.37.882.898-3.284-.216-.346A9.998 9.998 0 0 1 2.016 12.03 10.02 10.02 0 0 1 12.03 2.017a10.021 10.021 0 0 1 10.016 10.017 10.022 10.022 0 0 1-10.015 9.98zm5.5-7.514c-.302-.15-1.782-.878-2.06-.98-.277-.1-.478-.15-.68.15-.202.302-.782.98-.958 1.18-.176.202-.352.228-.654.078-.302-.15-1.272-.468-2.42-1.493-.896-.802-1.502-1.79-1.68-2.092-.177-.302-.02-.465.132-.615.135-.136.302-.352.453-.528.15-.176.202-.302.302-.503.1-.202.05-.378-.025-.528-.076-.15-.68-1.636-.93-2.242-.244-.593-.49-.512-.68-.52-.176-.01-.377-.01-.578-.01-.202 0-.528.076-.804.378-.276.302-1.056 1.03-1.056 2.512 0 1.482 1.082 2.915 1.232 3.116.15.202 2.124 3.242 5.143 4.544.718.31 1.278.495 1.716.634.72.23 1.374.198 1.892.12.58-.088 1.782-.728 2.032-1.432.25-.703.25-1.306.175-1.432-.075-.126-.276-.202-.578-.352z" />
+                  </svg>
+                  PO via WhatsApp
+                </a>
+              </div>
             </div>
 
             <div className="info-box light" id="aboutme">
               <div className="eyebrow">Tentang</div>
               <h3>Siapa Mak Udin?</h3>
               <p>
-                Booth es teh dan spot foto cermin cembung di CFD Depok, buka
-                tiap Minggu pagi. Mulai dari iseng jualan, sekarang sudah jadi
-                langganan warga Depok yang olahraga pagi.
+                Mak Udin Store merupakan UMKM yang bergerak di bidang penjualan minuman segar berupa es teh manis jumbo serta jasa selfie convex mirror.
+
+                Usaha ini beroperasi di area CFD Depok setiap hari Minggu pukul 06.00-09.00. Sudah berjalan lebih dari 1 tahun dan dikelola oleh 2 orang (ibu dan anak).
               </p>
 
               <div className="social-grid">
@@ -425,6 +461,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="testimonial-section" id="testimoni">
+        <div className="container">
+          <div className="testimonial-header">
+            <span className="eyebrow">Apa Kata Mereka?</span>
+            <h2>Testimoni Pelanggan</h2>
+          </div>
+          <div className="testimonial-grid">
+            {testimonials.map((t, i) => (
+              <div className="testimonial-card" key={i}>
+                <div className="testimonial-stars">
+                  ★★★★★
+                </div>
+                <p className="testimonial-text">"{t.text}"</p>
+                <div className="testimonial-author">- {t.author}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="lokasi-section" id="lokasi">
         <div className="container">
           <div className="lokasi-header">
@@ -434,7 +490,7 @@ export default function Home() {
           </div>
           <div className="map-container">
             <iframe
-              src="https://maps.google.com/maps?q=-6.3848713,106.8294192&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=-6.3847651,106.8291106&t=&z=17&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
